@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+*{
+      margin: 0;
+      padding: 0;
+    }
+
+    .sub-body{
+      position: relative;
+    }
+
+
+    .nav{
+            height: 50px;
+            width: 100vw;
+            background-color:rgb(219, 7, 106);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+
+           }
+
+           ul{
+            text-align: right;
+            position: absolute;
+            top: 9px;
+            right: 40px;
+            
+        }
+
+        ul li{
+            display: inline-block;
+            padding: 5px;
+            
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            border-bottom: 2px solid rgba(0,0,0,0.6),rgba(0,0,0,0.6);
+            padding: 5px;
+            
+            
+        }
+
+        ul li a:hover{
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        .logo{
+            position: absolute;
+            top: 0px;
+            left: 25px;
+            background-image: url("photo/D-removebg-preview_120x50.png");
+            height: 50px;
+            width: 120px;
+           background-color:rgb(156, 151, 151);
+           }
+
+           .btn{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 20px;
+            display: none;
+            
+        }
+
+        @media (max-width:668px){
+            .btn{
+                display: block;
+                position: fixed;
+                top: 5px;
+                right: 25px;
+                cursor: pointer;
+            }
+               
+
+               ul{ 
+                position: fixed;
+                top: 50px;
+                right: -100%;
+                height: 90%;
+                width: 40%;
+                text-align: center;
+                background-color: rgb(201, 37, 114);
+                transition: all .5s;
+                border-bottom-left-radius: 50px;
+                border-top-left-radius: 50px;
+                margin-top: 5px;
+            }
+
+            
+
+            ul li{
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+                padding-right: 10px;
+            }
+
+            ul li a{
+                font-weight: bolder;
+            }
+            
+            ul li a:hover{
+                border-bottom: 2px solid white;
+            }
+
+            #check:checked ~ ul{
+                right: 0;
+            }
+        }   
+
+
+
+
+
+
+
+
+
+
+
+        .skills{
+            height: 600px;
+            width: 100vw;
+            background-color: white;
+            padding: 30px;
+
+        }
+
+        .skills-5{
+            float: left;
+            width: 46%;
+            background-color: white;
+            padding:10px;
+            margin: 30px 10px;
+
+            box-sizing: border-box;
+        }
+
+
+        .skills-10{
+            float: left;
+            width: 46%;
+            background-color: white;
+            padding:10px;
+            margin: 30px 10px;
+            box-sizing: border-box;
+        }
+
+        .html-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .html-right{
+            height: 4px;
+            width: 90%;
+            background-color: red;
+        }
+
+        .css-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .css-right{
+            height: 4px;
+            width:75%;
+            background-color: red;
+        }
+
+        .bootstrap-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .bootstrap-right{
+            height: 4px;
+            width: 60%;
+            background-color: red;
+        }
+
+        .java-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .java-right{
+            height: 4px;
+            width: 85%;
+            background-color: red;
+        }
+
+        .php-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .php-right{
+            height: 4px;
+            width: 60%;
+            background-color: red;
+        }
+
+        
+     .html90{
+         width: 100%;
+     }
+
+     @media (max-width:895px){
+         .skills-5{
+             width: 100%;
+         }
+
+         .skills-10{
+             width: 100%;
+             margin-top: 0px;
+         }
+
+        .skills-head{
+            margin-top: 50px
+        }
+
+         
+     }
+
+ 
+      
+
+
+
+     .social-media{
+          height: 200px;
+          width: 100vw;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+      }
+
+      .social{
+          padding: 20px;
+          background-color: rgb(207, 200, 200);
+          border-radius: 50px;
+          margin: 10px;
+          box-shadow: 10px 10px 15px rgb(238, 226, 226),
+                      -10px -10px 15px rgb(196, 185, 185);
+      }
+
+     a:hover i{
+          transform: scale(1.4);
+          transition: .5s;
+
+      }
+        
+       
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="sub-body">  
+        <div class="nav">
+          <input style="display: none;" type="checkbox" id="check">
+              <label for="check" class="btn">
+                <i style="color: white; font-size: 20px;" class="fas fa-bars"></i>
+              </label>
+              <div class="logo"></div>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a style="border-bottom: 2px white solid;" href="skills.html">SKILLS</a></li>
+                <li><a href="team.html">TEAMS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+      </div>
+    
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="skills">
+      
+        <div style="text-align: center; margin-top: 50px;" class="skills-head">
+            <h1 class="display-3"> <b style="color: red;">M</b>y sk<b style="color: red;">i</b>lls</h1>
+            <p class="h4" style="color: rgb(255, 0, 119);"><b style="color: rgb(105, 97, 97);">---</b><b>whit i know</b><b style="color: rgb(105, 97, 97);">---</b></p>
+        </div>
+      
+
+    <div class="skills-5 skills50"> 
+       <div class="skills-1">
+           <h3>My creative skills & expriences</h3>
+          <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, atque voluptatibus porro reiciendis eaque sed distinctio ullam repudiandae cum repellat vero ducimus animi, laborum voluptas, maiores dolor culpa tempora ab?</p>
+          <button style="background-color: rgb(255, 0, 119); border: 2px solid rgb(255, 0, 119); border-radius: 5px; padding: 5px; color: white;">Read mare</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="skills-10 skills50"> 
+       <div class="skills-1">
+           <div class="html90">
+              HTML <b style="float: right;">90%</b>
+           </div>
+          <div style="position: relative;" class="html-left"> 
+            <div class="html-right"></div>
+          </div>  
+       </div>
+
+
+       <div class="skills-1">
+          <div style="padding-top: 10px;" class="html90">
+             CSS <b style="float: right;">75%</b>
+          </div>
+            <div style="position: relative;" class="css-left"> 
+            <div class="css-right"></div>
+          </div>
+       </div>
+
+
+       <div class="skills-1">
+            <div style="padding-top: 10px;" class="html90">
+               Bootstrap <b style="float: right;">60%</b>
+            </div>
+          <div style="position: relative;" class="bootstrap-left"> 
+            <div class="bootstrap-right"></div>
+          </div>
+       </div>
+
+
+       <div class="skills-1">
+        <div style="padding-top: 10px;" class="html90">
+           JavaScript <b style="float: right;">85%</b>
+        </div>
+      <div style="position: relative;" class="java-left"> 
+        <div class="java-right"></div>
+      </div>
+   </div>
+
+
+   <div class="skills-1">
+    <div style="padding-top: 10px;" class="html90">
+       PHP <b style="float: right;">60%</b>
+    </div>
+  <div style="position: relative;" class="php-left"> 
+    <div class="php-right"></div>
+  </div>
+</div>
+</div>  
+</div>
+
+
+
+<div class="social-media"> 
+    <a class="social" href="https://web.facebook.com/profile.php?id=100033078517119&_rdc=1&_rdr"><i style="color: #4267B2;" class="fab fa-2x fa-facebook-f"></i></a>
+    <a class="social" href=""><i style="color: #FF0000;" class="fab fa-2x fa-youtube"></i></a>
+    <a class="social" href=""><i style="color: #1DA1F2;" class="fab fa-2x fa-twitter"></i></a>
+    <a class="social" href=""><i style="color: #8a3ab9;" class="fab fa-2x fa-instagram"></i></a>
+ </div>   
+</body>
+</html>

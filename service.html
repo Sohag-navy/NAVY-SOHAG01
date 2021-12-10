@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Fira+Sans+Condensed:wght@100&family=Francois+One&family=Oswald&display=swap');
+        </style>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+*{
+      margin: 0;
+      padding: 0;
+    }
+
+    .sub-body{
+      position: relative;
+    }
+
+
+    .nav{
+            height: 50px;
+            width: 100vw;
+            background-color:rgb(219, 7, 106);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+
+           }
+
+           ul{
+            text-align: right;
+            position: absolute;
+            top: 9px;
+            right: 40px;
+            
+        }
+
+        ul li{
+            display: inline-block;
+            padding: 5px;
+            
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            border-bottom: 2px solid rgba(0,0,0,0.6),rgba(0,0,0,0.6);
+            padding: 5px;
+            
+            
+        }
+
+        ul li a:hover{
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        .logo{
+            position: absolute;
+            top: 0px;
+            left: 25px;
+            background-image: url("photo/D-removebg-preview_120x50.png");
+            height: 50px;
+            width: 120px;
+           background-color:rgb(156, 151, 151);
+           }
+
+           .btn{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 20px;
+            display: none;
+        }
+
+        @media (max-width:668px){
+          .btn{
+                display: block;
+                position: fixed;
+                top: 4px;
+                right: 25px;
+                cursor: pointer;
+               }
+
+               ul{
+                position: fixed;
+                top: 50px;
+                right: -100%;
+                height: 90%;
+                width: 40%;
+                text-align: center;
+                background-color: rgb(201, 37, 114);
+                transition: all .5s;
+                border-bottom-left-radius: 50px;
+                border-top-left-radius: 50px;
+                margin-top: 5px;
+            }
+
+            
+
+            ul li{
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+                padding-right: 10px;
+            }
+
+            ul li a{
+                font-weight: bolder;
+            }
+            
+            ul li a:hover{
+                border-bottom: 2px solid white;
+            }
+
+            #check:checked ~ ul{
+                right: 0;
+            }
+        }   
+
+
+
+        .service{
+            width: 100vw;
+            height: 800px;
+            background-color:white;
+            margin-top: 00px;
+            padding: 100px;
+        }
+
+
+        .service-1{
+            
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgb(167, 161, 161),
+                        -10px -10px 10px rgb(167, 161, 161);
+                        transition: 0.5s;
+            float: left;
+            width: 29.80%;
+            text-align: center;
+            margin-left: 200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-sizing: border-box;            
+        }
+
+        .ser{
+            margin-left: 20px;
+        }
+
+        .service-paragrap{
+            font-family: 'Francois One', sans-serif;
+        }
+
+        @media (max-width:775px){
+            .service{
+                width: 100vw;
+                height: 1400px;
+                padding: 50px;
+            }
+            .service-1{
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .ser{
+            margin-top: 20px;
+        }
+
+            
+        }
+
+
+
+
+
+
+        
+     .social-media{
+          height: 100px;
+          width: 100vw;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+      }
+
+      .social{
+          padding: 20px;
+          background-color: rgb(207, 200, 200);
+          border-radius: 50px;
+          margin: 10px;
+          box-shadow: 10px 10px 15px rgb(238, 226, 226),
+                      -10px -10px 15px rgb(196, 185, 185);
+      }
+
+     a:hover i{
+          transform: scale(1.4);
+          transition: .5s;
+
+      }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="sub-body">  
+        <div class="nav">
+          <input style="display: none;" type="checkbox" id="check">
+              <label for="check" class="btn">
+                <i style="font-size: 20px; color: white;" class="fas fa-bars"></i>
+              </label>
+              <div class="logo"></div>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a style="border-bottom: 2px white solid;" href="service.html">SERVICE</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="team.html">TEAMS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="service">
+        <div style="text-align: center; padding-top: px;" class="service-head">
+            <h1 class="display-4"> <b style="color: red;">MY</b> SERVI<b style="color: red;">C</b>E</h1>
+            <h3 style="color: rgb(255, 0, 119);"> <b>---</b> what i provide <b>---</b></h3>
+        </div>
+        <div class="service-1 ser"> 
+            <i style="font-size: 35px; color: rgb(201, 37, 114); margin-top: 20px; border: 1px solid rgb(165, 160, 160); padding: 15px; border-radius: 50px; box-shadow: 5px 5px 10px rgb(165, 160, 160), -5px -5px 10px rgb(161, 154, 154);" class="fas fa-code"></i>
+            <h3 style="margin-top: 10px; color: red;">Web Design</h3>
+            <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quod quos, at cum enim obcaecati perspiciatis distinctio omnis ab delectus soluta nihil facilis rem, ex maxime eaque! Molestias, doloribus illum!</p>
+        </div>
+
+        <div class="service-1 ser"> 
+            <i style="font-size: 35px; color: rgb(201, 37, 114); margin-top: 20px; border: 1px solid rgb(165, 160, 160); padding: 15px; border-radius: 50px; box-shadow: 5px 5px 10px rgb(165, 160, 160), -5px -5px 10px rgb(161, 154, 154);" class="fas fa-code"></i>
+            <h3 style="margin-top: 10px; color: red;">Web Design</h3>
+            <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quod quos, at cum enim obcaecati perspiciatis distinctio omnis ab delectus soluta nihil facilis rem, ex maxime eaque! Molestias, doloribus illum!</p>
+        </div>
+
+        <div class="service-1 ser"> 
+            <i style="font-size: 35px; color: rgb(201, 37, 114); margin-top: 20px; border: 1px solid rgb(165, 160, 160); padding: 15px; border-radius: 50px; box-shadow: 5px 5px 10px rgb(165, 160, 160), -5px -5px 10px rgb(161, 154, 154);" class="fas fa-code"></i>
+            <h3 style="margin-top: 10px; color: red;">Web Design</h3>
+            <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quod quos, at cum enim obcaecati perspiciatis distinctio omnis ab delectus soluta nihil facilis rem, ex maxime eaque! Molestias, doloribus illum!</p>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="social-media"> 
+        <a class="social" href="https://web.facebook.com/profile.php?id=100033078517119&_rdc=1&_rdr"><i style="color: #4267B2;" class="fab fa-2x fa-facebook-f"></i></a>
+        <a class="social" href=""><i style="color: #FF0000;" class="fab fa-2x fa-youtube"></i></a>
+        <a class="social" href=""><i style="color: #1DA1F2;" class="fab fa-2x fa-twitter"></i></a>
+        <a class="social" href=""><i style="color: #8a3ab9;" class="fab fa-2x fa-instagram"></i></a>
+     </div>   
+</body>
+</html>

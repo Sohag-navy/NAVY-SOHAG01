@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+
+       .sub-body{
+            background-image:linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)), url("photo/thumb-1920-373586.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+           
+        }
+        .nav{
+            height: 50px;
+            width: 100vw;
+            background-color:rgba(0,0,0,0.6),rgba(0,0,0,0.6);
+           
+        }
+
+        ul{
+            text-align: right;
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            
+        }
+
+        ul li{
+            display: inline-block;
+            padding: 5px;
+            
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            border-bottom: 2px solid rgba(0,0,0,0.6),rgba(0,0,0,0.6);
+            padding: 5px;
+            
+            
+        }
+
+        ul li a:hover{
+            border-bottom: 2px solid rgb(255, 0, 119);
+            color: white;
+        }
+
+        ul li a:active{
+            
+        }
+
+        .logo{
+            position: absolute;
+            top: 5px;
+            left: 25px;
+            background-image: url("photo/D-removebg-preview_120x50.png");
+            height: 50px;
+            width: 120px;   
+        }
+
+        .btn{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 20px;
+            display: none;
+        }
+
+        .name{
+            margin-top: 300px;
+            margin-left: 60px;
+            color: white;
+            border-left: 5px rgb(219, 7, 106) solid;
+            padding: 20px;
+        }
+
+        .name-style a{
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .name .name-style h1{
+            font-family: 'Acme', sans-serif;
+        }
+
+        .name h6{
+            font-family: 'Oswald', sans-serif;
+
+        }
+
+        .btn-1{
+            text-decoration: none;
+            border-radius: 15px;
+        }
+
+        .button{
+            background-color: rgb(255, 0, 119);
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 30px;
+            margin-top: 5px;
+        }
+
+        .button:hover{
+            padding: ;
+            font-size: 20px;
+            transition: 0.9s;
+        }
+
+        @media (max-width:668px){
+
+            .sub-body{
+            background-image: url("photo/banner.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+           
+        }
+            .btn{
+                display: block;
+            }
+
+            .nav{
+                background-color: rgb(255, 0, 119);
+                
+            }
+
+            .logo{
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            height: 50px;
+            width: 120px;
+            background-color: rgb(156, 151, 151);
+        }
+
+            ul{
+                position: fixed;
+                top: 50px;
+                right: -100%;
+                height: 90%;
+                width: 40%;
+                text-align: center;
+                background-color: rgb(201, 37, 114);
+                transition: all .5s;
+                border-bottom-left-radius: 50px;
+                border-top-left-radius: 50px;
+                margin-top: 5px;
+            }
+
+            
+
+            ul li{
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+                padding-right: 10px;
+            }
+
+            ul li a{
+                font-weight: bolder;
+            }
+            
+            ul li a:hover{
+                border-bottom: 2px solid white;
+            }
+            
+
+            
+        }
+
+        ul li a:active{
+            color: rgba(0, 255, 136, 0.582);
+        }
+
+            #check:checked ~ ul{
+                right: 0;
+            }
+        }
+
+        @media (min-width:1150px){
+            .name{
+            margin-top: 300px;
+            margin-left: 100px;
+            color: white;
+            
+            padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sub-body">  
+    <div class="nav">
+        <input style="display: none;" type="checkbox" id="check">
+        <label for="check" class="btn">
+            <i style="font-size: 20px; color: white;" class="fas fa-bars"></i>
+        </label>
+        
+        
+        <div class="logo"></div>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">SKILLS</a></li>
+            <li><a href="">TEAM</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+
+        <div class="name">
+            <h6>Hello, my name is</h6>
+                <div class="name-style">
+                         <a href=""> <h1 class="display-5">MD. SOHAG</h1></a>
+                         <a href=""> <h1 style="color: rgb(255, 0, 119); font-size: 25px;" class="display-4">HOSSEN</h1></a>
+                </div>  
+            <h4>I'am a Web Developer</h4>
+
+            <div class="button"><a style="text-decoration: none; color: white;" href="">Hire me</a></div>
+            </div>
+     
+   </div>
+    
+
+
+
+
+</body>
+</html>

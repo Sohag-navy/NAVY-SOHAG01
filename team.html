@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .sub-body{
+      position: relative;
+    }
+
+
+    .nav{
+            height: 50px;
+            width: 100vw;
+            background-color:rgb(219, 7, 106);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+
+           }
+
+           ul{
+            text-align: right;
+            position: absolute;
+            top: 9px;
+            right: 40px;
+            
+        }
+
+        ul li{
+            display: inline-block;
+            padding: 5px;
+            
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            border-bottom: 2px solid rgba(0,0,0,0.6),rgba(0,0,0,0.6);
+            padding: 5px;
+            
+            
+        }
+
+        ul li a:hover{
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        .logo{
+            position: absolute;
+            top: 0px;
+            left: 25px;
+            background-image: url("photo/D-removebg-preview_120x50.png");
+            height: 50px;
+            width: 120px;
+           background-color:rgb(156, 151, 151);
+           }
+
+           .btn{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 20px;
+            display: none;
+        }
+
+        @media (max-width:668px){
+          .btn{
+                display: block;
+                position: fixed;
+                top: 13px;
+                right: 25px;
+                cursor: pointer;
+               }
+
+               ul{
+                position: fixed;
+                top: 50px;
+                right: -100%;
+                height: 90%;
+                width: 40%;
+                text-align: center;
+                background-color: rgb(201, 37, 114);
+                transition: all .5s;
+                border-bottom-left-radius: 50px;
+                border-top-left-radius: 50px;
+                margin-top: 5px;
+            }
+
+            
+
+            ul li{
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+                padding-right: 10px;
+            }
+
+            ul li a{
+                font-weight: bolder;
+            }
+            
+            ul li a:hover{
+                border-bottom: 2px solid white;
+            }
+
+            #check:checked ~ ul{
+                right: 0;
+            }
+        }   
+
+
+       .team-body{
+           background-color: rgb(26, 24, 24);
+           height:1000px ;
+           width: 100vw;
+           
+       }
+
+       .teamall-1{
+          background-color: rgba(56, 52, 52, 0.5);
+          padding: 30px;
+          border-radius: 15px;
+          margin: 5px;
+          float: left;
+          width: 49%;
+          margin-top: 15px;
+          box-sizing: border-box;
+        }
+
+        .teamall-1:hover{
+           background-color: rgb(235, 14, 62);
+           transition: 0.5s;
+           
+        }
+
+
+      .all-img{
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+          paddimg-top: 20px;
+          margin: 0 auto;
+        }
+
+        
+
+        @media (max-width:768px){
+          .teamall-1{
+          background-color: rgba(56, 52, 52, 0.5);
+          border-radius: 15px;
+          
+          float: left;
+          width: 96%;
+          
+          box-sizing: border-box;
+        }
+
+        .team-body{
+            background-color: rgb(26, 24, 24);
+            
+            height: 1700px;
+            width: 100vw;
+            
+        }
+
+
+        }
+
+
+
+
+
+
+
+        .social-media{
+          height: 200px;
+          width: 100vw;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+      }
+
+      .social{
+          padding: 20px;
+          background-color: rgb(207, 200, 200);
+          border-radius: 50px;
+          margin: 10px;
+          box-shadow: 10px 10px 15px rgb(238, 226, 226),
+                      -10px -10px 15px rgb(196, 185, 185);
+      }
+
+     a:hover i{
+          transform: scale(1.4);
+          transition: .5s;
+
+      }
+
+        
+  </style>
+</head>
+<body>
+  <div class="sub-body">  
+  <div class="nav">
+    <input style="display: none;" type="checkbox" id="check">
+        <label for="check" class="btn">
+          <i style="font-size: 20px; color: white;" class="fas fa-bars"></i>
+        </label>
+        <div class="logo"></div>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="skills.html">SKILLS</a></li>
+          <li><a style="border-bottom: 2px white solid;" href="team.html">TEAMS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+</div>
+
+<div class="team-body"> 
+    <h2 class="display-4" style="color:rgb(252, 252, 252); font-weight: bolder; text-align: center; padding-top: 70px;">My Team</h2>
+    <h3 style="text-align: center; color: rgb(235, 215, 215);"><b style="font-size: 25px;">---</b>    <b style="color: rgb(201, 37, 114);">who with me</b>    <b style="font-size: 25px;">---</b></h3>
+    
+       <div class="teamall-1">
+         <div class="all-img"><img style="height: 100px; width: 100px; border: 3px solid rgb(219, 7, 106); border-radius: 50px; " class="img-fluid" src="photo/about.jpg" alt=""></div>
+         <h3 style="color: white; text-align: center; padding-top: 20px; ">SAKIB HOSSEN</h3>
+         <p style="color: white; text-align: justify; padding-left: 10px; padding-right: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit repellat illum quo provident quasi, vel asperiores in nesciunt alias illo eveniet voluptates accusamus sapiente quisquam unde dolores tenetur commodi.</p>
+       </div>
+    
+       <div style="margin-right:0px;" class="teamall-1">
+        <div class="all-img"><img style="height: 100px; width: 100px; border: 3px solid rgb(219, 7, 106); border-radius: 50px; margin-top: 10px;" class="img-fluid" src="photo/friend2.jpg" alt=""></div>
+        <h3 style="color: white; text-align: center; padding-top:25px; ">SAKIB HOSSEN</h3>
+        <p style="color: white; text-align: justify; padding-left: 10px; padding-right: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit repellat illum quo provident quasi, vel asperiores in nesciunt alias illo eveniet voluptates accusamus sapiente quisquam unde dolores tenetur commodi.</p>
+      </div>
+    
+      <div class="teamall-1">
+        <div class="all-img"><img style="height: 100px; width: 100px; border: 3px solid rgb(219, 7, 106); border-radius: 50px; margin-top: 10px;" class="img-fluid" src="photo/about.jpg" alt=""></div>
+        <h3 style="color: white; text-align: center; padding-top: 25px; ">SAKIB HOSSEN</h3>
+        <p style="color: white; text-align: justify; padding-left: 10px; padding-right: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit repellat illum quo provident quasi, vel asperiores in nesciunt alias illo eveniet voluptates accusamus sapiente quisquam unde dolores tenetur commodi.</p>
+      </div>
+    
+      <div style="margin-right:0px;" class="teamall-1">
+        <div class="all-img"><img style="height: 100px; width: 100px; border: 3px solid rgb(219, 7, 106); border-radius: 50px; margin-top: 10px;" class="img-fluid" src="photo/friend2.jpg" alt=""></div>
+        <h3 style="color: white; text-align: center; padding-top: 25px; ">SAKIB HOSSEN</h3>
+        <p style="color: white; text-align: justify; padding-left: 10px; padding-right: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit repellat illum quo provident quasi, vel asperiores in nesciunt alias illo eveniet voluptates accusamus sapiente quisquam unde dolores tenetur commodi.</p>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="social-media"> 
+      <a class="social" href="https://web.facebook.com/profile.php?id=100033078517119&_rdc=1&_rdr"><i style="color: #4267B2;" class="fab fa-2x fa-facebook-f"></i></a>
+      <a class="social" href=""><i style="color: #FF0000;" class="fab fa-2x fa-youtube"></i></a>
+      <a class="social" href=""><i style="color: #1DA1F2;" class="fab fa-2x fa-twitter"></i></a>
+      <a class="social" href=""><i style="color: #8a3ab9;" class="fab fa-2x fa-instagram"></i></a>
+   </div>   
+    
+</body>
+</html>

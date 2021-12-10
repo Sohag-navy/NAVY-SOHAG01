@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Fira+Sans+Condensed:wght@100&family=Francois+One&family=Oswald&display=swap');
+        </style>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+*{
+      margin: 0;
+      padding: 0;
+    }
+
+    .sub-body{
+      position: relative;
+    }
+
+
+    .nav{
+            height: 50px;
+            width: 100vw;
+            background-color:rgb(219, 7, 106);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+
+           }
+
+           ul{
+            text-align: right;
+            position: absolute;
+            top: 9px;
+            right: 40px;
+            
+        }
+
+        ul li{
+            display: inline-block;
+            padding: 5px;
+            
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            border-bottom: 2px solid rgba(0,0,0,0.6),rgba(0,0,0,0.6);
+            padding: 5px;
+            
+            
+        }
+
+        ul li a:hover{
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        .logo{
+            position: absolute;
+            top: 0px;
+            left: 25px;
+            background-image: url("photo/D-removebg-preview_120x50.png");
+            height: 50px;
+            width: 120px;
+           background-color:rgb(156, 151, 151);
+           }
+
+           .btn{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 20px;
+            display: none;
+        }
+
+        @media (max-width:668px){
+          .btn{
+                display: block;
+                position: fixed;
+                top: 4px;
+                right: 25px;
+                cursor: pointer;
+               }
+
+               ul{
+                position: fixed;
+                top: 50px;
+                right: -100%;
+                height: 90%;
+                width: 40%;
+                text-align: center;
+                background-color: rgb(201, 37, 114);
+                transition: all .5s;
+                border-bottom-left-radius: 50px;
+                border-top-left-radius: 50px;
+                margin-top: 5px;
+            }
+
+            
+
+            ul li{
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+                padding-right: 10px;
+            }
+
+            ul li a{
+                font-weight: bolder;
+            }
+            
+            ul li a:hover{
+                border-bottom: 2px solid white;
+            }
+
+            #check:checked ~ ul{
+                right: 0;
+            }
+        }   
+
+
+
+        .contact{
+            width: 100vw;
+            height: 600px;
+            background-color:white;
+            margin-top: px;
+            padding: 100px;
+            
+            
+        }
+
+        .contact-1{
+            
+            padding: 10px;
+            border-radius: 0px;
+            box-shadow: 10px 10px 15px rgb(167, 161, 161),
+                        -10px -10px 10px rgb(167, 161, 161);
+                        transition: 0.5s;
+            float: left;
+            width: 29.80%;
+            text-align: center;
+            margin-left: 200px;
+            margin: 0 auto;
+            margin-top: 60px;
+            box-sizing: border-box;            
+        }
+
+        .con{
+            margin-left: 20px;
+            
+        }
+
+        .contact-1:hover{
+            background-color: rgb(226, 171, 197);
+        }
+
+        .contact-paragrap{
+            font-family: 'Francois One', sans-serif;
+        }
+
+        @media (max-width:775px){
+            .contact-1{
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+
+            .con{
+            margin-top: 30px;
+        }
+
+            
+        }
+
+
+
+
+
+        .social-media{
+          height: 200px;
+          width: 100vw;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+      }
+
+      .social{
+          padding: 20px;
+          background-color: rgb(207, 200, 200);
+          border-radius: 50px;
+          margin: 10px;
+          box-shadow: 10px 10px 15px rgb(238, 226, 226),
+                      -10px -10px 15px rgb(196, 185, 185);
+      }
+
+     a:hover i{
+          transform: scale(1.4);
+          transition: .5s;
+
+      }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="sub-body">  
+        <div class="nav">
+          <input style="display: none;" type="checkbox" id="check">
+              <label for="check" class="btn">
+                <i style="font-size: 20px; color: white;" class="fas fa-bars"></i>
+              </label>
+              <div class="logo"></div>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="team.html">TEAMS</a></li>
+                <li><a style="border-bottom: 2px white solid;" href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="contact">
+        <div style="text-align: center; margin-top: 0px;" class="contact-head">
+            <h1 class="display-4">C<b style="color: red;">O</b>NTACT <b style="color: red;">INFO</b></h1>
+            <h3 style="color: rgb(255, 0, 119);"> <b>---</b> Get in touch <b>---</b></h3>
+        </div>
+        <div class="contact-1 con"> 
+            <p style="text-align: center;" class="contact-paragrap"><b class="h4"><b style="color: red;">Phone</b></b><i style="font-size: 25px; padding-left: 10px; color: rgb(177, 56, 9);" class="fas fa-phone-volume"></i><br>
+                01628525287 <br>
+                01628525247
+            </p>
+        </div>
+
+        <div class="contact-1 con"> 
+            <p style="text-align: center;" class="contact-paragrap"><b class="h4"><b style="color: red;">Gmail</b></b><i style="font-size: 25px; padding-left: 10px; color: rgb(73, 73, 172);" class="far fa-envelope"></i><br>
+                abc2594@gmail.com <br>
+                idh2932@gmail.com
+            </p>
+        </div>
+
+        <div class="contact-1 con"> 
+            <p style="text-align: center;" class="contact-paragrap"><b class="h4"><b style="color: red;">Address</b></b><i style="font-size: 25px; padding-left: 10px; color: rgb(241, 158, 3);" class="fas fa-map-marked-alt"></i><br>
+                Faridpur, Dhaka.<br>
+                Bangladesh
+            </p>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+    <div class="social-media"> 
+        <a class="social" href="https://web.facebook.com/profile.php?id=100033078517119&_rdc=1&_rdr"><i style="color: #4267B2;" class="fab fa-2x fa-facebook-f"></i></a>
+        <a class="social" href=""><i style="color: #FF0000;" class="fab fa-2x fa-youtube"></i></a>
+        <a class="social" href=""><i style="color: #1DA1F2;" class="fab fa-2x fa-twitter"></i></a>
+        <a class="social" href=""><i style="color: #8a3ab9;" class="fab fa-2x fa-instagram"></i></a>
+     </div>
+</body>
+</html>

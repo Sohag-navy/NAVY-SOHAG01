@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Fira+Sans+Condensed:wght@100&family=Oswald&display=swap');
+    </style>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <style> 
+    
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      ;
+    }
+    
+
+    .sub-body{
+      position: relative;
+      background-image: url("photo/banner.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+    }
+
+
+    .nav{
+            height: 50px;
+            width: 100vw;
+            background-color:rgb(255, 0, 119);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+
+           }
+
+           ul{
+            text-align: right;
+            position: absolute;
+            top: 9px;
+            right: 40px;
+            
+        }
+
+        ul li{
+            display: inline-block;
+            padding: 5px;
+            
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            border-bottom: 2px solid rgba(0,0,0,0.50),rgba(0,0,0,0.50);
+            padding: 5px;
+            
+            
+        }
+
+        ul li a:hover{
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        .logo{
+            position: absolute;
+            top: 0px;
+            left: 25px;
+            background-image: url("photo/D-removebg-preview_120x50.png");
+            height: 50px;
+            width: 120px;
+            background-color:rgb(156, 151, 151);
+           }
+
+           .btn{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 20px;
+            display: none;
+        }
+
+        .name{
+          padding-top: 300px;
+          padding-left: 60px;
+        }
+
+        .display-2{
+          font-family: 'Oswald', sans-serif;
+        }
+
+        
+
+
+        .button{
+            background-color: rgb(255, 0, 119);
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 30px;
+            margin-top: 5px;
+        }
+
+        .button:hover{
+            padding: ;
+            font-size: 20px;
+            transition: 0.9s;
+        }
+
+        @media (max-width:668px){
+          .btn{
+                display: block;
+                position: fixed;
+                top: 5px;
+                right: 25px;
+                cursor: pointer;
+               }
+
+          
+               ul{
+                position: fixed;
+                top: 50px;
+                right: -100%;
+                height: 90%;
+                width: 40%;
+                text-align: center;
+                background-color: rgb(201, 37, 114);
+                transition: all .5s;
+                border-bottom-left-radius: 50px;
+                border-top-left-radius: 50px;
+                margin-top: 5px;
+            }
+
+            
+
+            ul li{
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+                padding-right: 10px;
+            }
+
+            ul li a{
+                font-weight: bolder;
+            }
+            
+            ul li a:hover{
+                border-bottom: 2px solid white;
+            }
+
+            #check:checked ~ ul{
+                right: 0;
+            }
+        }   
+       
+
+           
+
+
+
+
+
+
+
+
+
+        .about-head{
+          text-decoration: none;
+          color:rgb(201, 37, 114); 
+          font-size: 25px; 
+          font-weight: bolder; 
+          text-decoration: none;
+          padding: 5px;
+          text-align: center;
+          padding-top: 25px;
+            
+        }
+
+        
+
+        .photo{
+          float: left;
+          width: 40%;
+          margin: 10px 0px;
+          border-radius: 25px;
+          box-sizing: border-box;
+          box-shadow: 10px 10px 15px rgb(153, 141, 141),
+                      -10px -10px 15px rgb(153, 141, 141);
+        }
+
+        .about{
+          padding: 20px;
+        }
+
+        .about-1{
+          float: right;
+          width: 50%;
+          margin: 5px;
+          box-sizing: border-box;
+          padding: 15px;
+          margin: 5px;
+          }
+
+        .img-fluid-0{
+          width: 100%;
+          height: 100%;
+          margin-top: 0px;
+          }
+
+          .button{
+            background-color: rgb(255, 0, 119);
+            width: 100px;
+            padding: 8px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 25px;
+        }
+
+        .button:hover{
+            padding: ;
+            font-size: 20px;
+            transition: 0.9s;
+        }
+
+        @media (max-width:890px){
+          .photo{
+          float: left;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 10px;
+          
+        }
+
+        .about-1{
+          float: right;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 10px;
+          
+        }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .team-body{
+            background-color: rgb(26, 24, 24);
+            height: 800px;
+            width: 100vw;
+            padding: 30px;
+        }
+
+        .teamall-1{
+          background-color: rgba(56, 52, 52, 0.5);
+          border-radius: 15px;
+          margin: 5px;
+          float: left;
+          width: 48%;
+          margin-top: 30px;
+          box-sizing: border-box;
+        }
+
+        
+
+        .teamall-1:hover{
+           background-color: rgb(235, 14, 62);
+           transition: 0.5s;
+           
+        }
+
+        
+
+        .all-img{
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+          paddimg-top: 20px;
+          margin: 0 auto;
+        }
+
+        @media (max-width:768px){
+          .teamall-1{
+          background-color: rgba(56, 52, 52, 0.5);
+          border-radius: 15px;
+          margin: 5px;
+          float: left;
+          width: 96%;
+          margin-top: 50px;
+          box-sizing: border-box;
+        }
+
+        .team-body{
+            background-color: rgb(26, 24, 24);
+            height: 1800px;
+            width: 100vw;
+            padding: 30px;
+        }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .service{
+            width: 100vw;
+            height: 800px;
+            background-color:white;
+            margin-top: 00px;
+            padding: 100px;
+        }
+
+
+        .service-1{
+            
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgb(167, 161, 161),
+                        -10px -10px 10px rgb(167, 161, 161);
+                        transition: 0.5s;
+            float: left;
+            width: 29.80%;
+            text-align: center;
+            margin-left: 200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-sizing: border-box;            
+        }
+
+        .ser{
+            margin-left: 20px;
+        }
+
+        .service-paragrap{
+            font-family: 'Francois One', sans-serif;
+        }
+
+        @media (max-width:775px){
+            .service{
+                width: 100vw;
+                height: 1400px;
+                padding: 50px;
+            }
+            .service-1{
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .ser{
+            margin-top: 20px;
+        }
+
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .contact{
+            width: 100vw;
+            height: 400px;
+            background-color:white;
+            margin-top: px;
+            padding: 100px;
+            
+            
+        }
+
+        .contact-1{
+            
+            padding: 10px;
+            border-radius: 0px;
+            box-shadow: 10px 10px 15px rgb(167, 161, 161),
+                        -10px -10px 10px rgb(167, 161, 161);
+                        transition: 0.5s;
+            float: left;
+            width: 29.80%;
+            text-align: center;
+            margin-left: 200px;
+            margin-top: 120px;
+            margin: 0 auto;
+            margin-top: 0px;
+            box-sizing: border-box;            
+        }
+
+        .con{
+            margin-left: 20px;
+            
+        }
+
+        .contact-1:hover{
+            background-color: rgb(226, 171, 197);
+        }
+
+        .contact-paragrap{
+            font-family: 'Francois One', sans-serif;
+        }
+
+        @media (max-width:775px){
+            .contact-1{
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+
+            .contact{
+              height: 700px;
+            }
+            .con{
+            margin-top: 30px;
+        }
+
+            
+        }
+
+
+
+
+
+
+
+        .skills{
+            height: 600px;
+            width: 100vw;
+            background-color: white;
+            padding: 30px;
+
+        }
+
+        .skills-5{
+            float: left;
+            width: 46%;
+            background-color: white;
+            padding:10px;
+            margin: 30px 10px;
+
+            box-sizing: border-box;
+        }
+
+
+        .skills-10{
+            float: left;
+            width: 46%;
+            background-color: white;
+            padding:10px;
+            margin: 30px 10px;
+            box-sizing: border-box;
+        }
+
+        .html-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .html-right{
+            height: 4px;
+            width: 90%;
+            background-color: red;
+        }
+
+        .css-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .css-right{
+            height: 4px;
+            width:75%;
+            background-color: red;
+        }
+
+        .bootstrap-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .bootstrap-right{
+            height: 4px;
+            width: 60%;
+            background-color: red;
+        }
+
+        .java-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .java-right{
+            height: 4px;
+            width: 85%;
+            background-color: red;
+        }
+
+        .php-left{
+            height: 4px;
+            width: 100%;
+            background-color: rgb(105, 97, 97);
+        }
+
+        .php-right{
+            height: 4px;
+            width: 60%;
+            background-color: red;
+        }
+
+        
+     .html90{
+         width: 100%;
+     }
+
+     @media (max-width:895px){
+         .skills-5{
+             width: 100%;
+         }
+
+         .skills-10{
+             width: 100%;
+             margin-top: 0px;
+         }
+
+         .skills-head{
+            margin-top: 500px
+        }
+
+         
+     }
+
+
+
+
+     .social-media{
+          height: 300px;
+          width: 100vw;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+      }
+
+      .social{
+          padding: 20px;
+          background-color: rgb(207, 200, 200);
+          border-radius: 50px;
+          margin: 10px;
+          box-shadow: 10px 10px 15px rgb(238, 226, 226),
+                      -10px -10px 15px rgb(196, 185, 185);
+      }
+
+     a:hover i{
+          transform: scale(1.4);
+          transition: .5s;
+
+      }
+        
+
+
+
+
+ 
+      </style>
+       
+</head>
+<body>
+  <div class="total">
+  <div class="sub-body">  
+    <div class="nav">
+      <input style="display: none;" type="checkbox" id="check">
+          <label for="check" class="btn">
+            <i style="font-size: 20px; color: white;" class="fas fa-bars"></i>
+          </label>
+          <div class="logo"></div>
+          <ul>
+            <li><a style="border-bottom: 2px solid white;" href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="service.html">SERVICE</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="team.html">TEAMS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="name"> 
+        <h6 style="color: white; font-weight: bolder; border-left: 5px solid rgb(219, 0, 66);padding:0px 10px;">Hello, my name is</h6>
+         <h1 style="color: white;border-left: 5px solid rgb(219, 0, 66);padding:0px 10px;" class="display-2">S<b style="color:rgb(214, 22, 80);">O</b>HAG <b style=" color: rgb(219, 0, 66); 12;">HOSSEN</b></h1> 
+        <h4 style="color: white;border-left: 5px solid rgb(219, 0, 66);padding:0px 10px;">I'am a Web Developer</h4>
+
+        <div class="button"><a style="text-decoration: none; color: white;" href="">Hire me</a></div>
+        </div>
+      </div>
+
+
+
+  
+
+
+<div class="team-body"> 
+<h2 style="color:rgb(252, 252, 252); font-weight: bolder; text-align: center; padding-top: 30px;">My Team</h2>
+<h4 style="text-align: center; color: rgb(235, 215, 215);"><b style="font-size: 25px;">---</b>    <b style="color: rgb(201, 37, 114);">who with me</b>    <b style="font-size: 25px;">---</b></h4>
+
+   <div class="teamall-1">
+     <div class="all-img"><img style="height: 100px; width: 100px; border: 3px solid rgb(219, 7, 106); border-radius: 50px; margin-top: 10px;" class="img-fluid" src="photo/about.jpg" alt=""></div>
+     <h5 style="color: white; text-align: center; margin-top:20px ;">SAKIB HOSSEN</h5>
+     <p style="color: white; text-align: justify; padding-left: 10px; padding-right: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit repellat illum quo provident quasi, vel asperiores in nesciunt alias illo eveniet voluptates accusamus sapiente quisquam unde dolores tenetur commodi.</p>
+   </div>
+
+   <div style="margin-right:0px;" class="teamall-1">
+    <div class="all-img"><img style="height: 100px; width: 100px; border: 3px solid rgb(219, 7, 106); border-radius: 50px; margin-top: 10px;" class="img-fluid" src="photo/friend2.jpg" alt=""></div>
+    <h5 style="color: white; text-align: center; margin-top:20px ;">SAKIB HOSSEN</h5>
+    <p style="color: white; text-align: justify; padding-left: 10px; padding-right: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit repellat illum quo provident quasi, vel asperiores in nesciunt alias illo eveniet voluptates accusamus sapiente quisquam unde dolores tenetur commodi.</p>
+  </div>
+
+  <div class="teamall-1">
+    <div class="all-img"><img style="height: 100px; width: 100px; border: 3px solid rgb(219, 7, 106); border-radius: 50px; margin-top: 10px;" class="img-fluid" src="photo/about.jpg" alt=""></div>
+    <h5 style="color: white; text-align: center; margin-top:20px ;">SAKIB HOSSEN</h5>
+    <p style="color: white; text-align: justify; padding-left: 10px; padding-right: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit repellat illum quo provident quasi, vel asperiores in nesciunt alias illo eveniet voluptates accusamus sapiente quisquam unde dolores tenetur commodi.</p>
+  </div>
+
+  <div style="margin-right:0px;" class="teamall-1">
+    <div class="all-img"><img style="height: 100px; width: 100px; border: 3px solid rgb(219, 7, 106); border-radius: 50px; margin-top: 10px;" class="img-fluid" src="photo/friend2.jpg" alt=""></div>
+    <h5 style="color: white; text-align: center; margin-top:20px ;">SAKIB HOSSEN</h5>
+    <p style="color: white; text-align: justify; padding-left: 10px; padding-right: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit repellat illum quo provident quasi, vel asperiores in nesciunt alias illo eveniet voluptates accusamus sapiente quisquam unde dolores tenetur commodi.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="service">
+  <div style="text-align: center; padding-top: px;" class="service-head">
+      <h1 class="display-4" style="margin-top: 20px;"> <b style="color: red;">MY</b> SERVI<b style="color: red;">C</b>E</h1>
+      <h3 style="color: rgb(255, 0, 119);"> <b>---</b> what i provide <b>---</b></h3>
+  </div>
+  <div class="service-1 ser"> 
+      <i style="font-size: 35px; color: rgb(201, 37, 114); margin-top: 20px; border: 1px solid rgb(165, 160, 160); padding: 15px; border-radius: 50px; box-shadow: 5px 5px 10px rgb(165, 160, 160), -5px -5px 10px rgb(161, 154, 154);" class="fas fa-code"></i>
+      <h3 style="margin-top: 10px; color: red;">Web Design</h3>
+      <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quod quos, at cum enim obcaecati perspiciatis distinctio omnis ab delectus soluta nihil facilis rem, ex maxime eaque! Molestias, doloribus illum!</p>
+  </div>
+
+  <div class="service-1 ser"> 
+      <i style="font-size: 35px; color: rgb(201, 37, 114); margin-top: 20px; border: 1px solid rgb(165, 160, 160); padding: 15px; border-radius: 50px; box-shadow: 5px 5px 10px rgb(165, 160, 160), -5px -5px 10px rgb(161, 154, 154);" class="fas fa-code"></i>
+      <h3 style="margin-top: 10px; color: red;">Web Design</h3>
+      <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quod quos, at cum enim obcaecati perspiciatis distinctio omnis ab delectus soluta nihil facilis rem, ex maxime eaque! Molestias, doloribus illum!</p>
+  </div>
+
+  <div class="service-1 ser"> 
+      <i style="font-size: 35px; color: rgb(201, 37, 114); margin-top: 20px; border: 1px solid rgb(165, 160, 160); padding: 15px; border-radius: 50px; box-shadow: 5px 5px 10px rgb(165, 160, 160), -5px -5px 10px rgb(161, 154, 154);" class="fas fa-code"></i>
+      <h3 style="margin-top: 10px; color: red;">Web Design</h3>
+      <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quod quos, at cum enim obcaecati perspiciatis distinctio omnis ab delectus soluta nihil facilis rem, ex maxime eaque! Molestias, doloribus illum!</p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="contact">
+  <div style="text-align: center; margin-top: 0px;" class="contact-head">
+    <h1 class="display-4">C<b style="color: red;">O</b>NTACT <b style="color: red;">INFO</b></h1>
+    <h3 style="color: rgb(255, 0, 119);"> <b>-</b> contact <b>-</b></h3>
+  </div>
+  <div class="contact-1 con"> 
+      <p style="text-align: center;" class="contact-paragrap"><b class="h4"><b style="color: red;">Phone</b></b><i style="font-size: 25px; padding-left: 10px; color: rgb(177, 56, 9);" class="fas fa-phone-volume"></i><br>
+          01628525287 <br>
+          01628525247
+      </p>
+  </div>
+
+  <div class="contact-1 con"> 
+      <p style="text-align: center;" class="contact-paragrap"><b class="h4"><b style="color: red;">Gmail</b></b><i style="font-size: 25px; padding-left: 10px; color: rgb(73, 73, 172);" class="far fa-envelope"></i><br>
+          ab@gmail.com <br>
+          id@gmail.com
+      </p>
+  </div>
+
+  <div class="contact-1 con"> 
+      <p style="text-align: center;" class="contact-paragrap"><b class="h4"><b style="color: red;">Address</b></b><i style="font-size: 25px; padding-left: 10px; color: rgb(241, 158, 3);" class="fas fa-map-marked-alt"></i><br>
+          Faridpur, Dhaka.<br>
+          Bangladesh
+      </p>
+  </div>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="skills">
+      
+  <div style="text-align: center; margin-top: 50px;" class="skills-head">
+      <h1>My skills</h1>
+      <p style="color: rgb(255, 0, 119);"><b style="color: rgb(105, 97, 97);">---</b><b>whit i know</b><b style="color: rgb(105, 97, 97);">---</b></p>
+  </div>
+
+
+<div class="skills-5 skills50"> 
+ <div class="skills-1">
+     <h3>My creative skills & expriences</h3>
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, atque voluptatibus porro reiciendis eaque sed distinctio ullam repudiandae cum repellat vero ducimus animi, laborum voluptas, maiores dolor culpa tempora ab?</p>
+    <button style="background-color: rgb(255, 0, 119); border: 2px solid rgb(255, 0, 119); border-radius: 5px; padding: 5px; color: white;">Read mare</button>
+  </div>
+</div>
+
+
+
+
+
+<div class="skills-10 skills50"> 
+ <div class="skills-1">
+     <div class="html90">
+        HTML <b style="float: right;">90%</b>
+     </div>
+    <div style="position: relative;" class="html-left"> 
+      <div class="html-right"></div>
+    </div>  
+ </div>
+
+
+ <div class="skills-1">
+    <div style="padding-top: 10px;" class="html90">
+       CSS <b style="float: right;">75%</b>
+    </div>
+      <div style="position: relative;" class="css-left"> 
+      <div class="css-right"></div>
+    </div>
+ </div>
+
+
+ <div class="skills-1">
+      <div style="padding-top: 10px;" class="html90">
+         Bootstrap <b style="float: right;">60%</b>
+      </div>
+    <div style="position: relative;" class="bootstrap-left"> 
+      <div class="bootstrap-right"></div>
+    </div>
+ </div>
+
+
+ <div class="skills-1">
+  <div style="padding-top: 10px;" class="html90">
+     JavaScript <b style="float: right;">85%</b>
+  </div>
+<div style="position: relative;" class="java-left"> 
+  <div class="java-right"></div>
+</div>
+</div>
+
+
+<div class="skills-1">
+<div style="padding-top: 10px;" class="html90">
+ PHP <b style="float: right;">60%</b>
+</div>
+<div style="position: relative;" class="php-left"> 
+<div class="php-right"></div>
+</div>
+</div>
+</div>  
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="about"> 
+  <div class="about-head">  
+    <a style="text-decoration: none; text-align: center;" href="">About me</a>
+     <h6 style="text-align: center; color: rgb(99, 86, 86);"><b style="font-size: 25px;">---</b>    <b style="color: rgb(201, 37, 114);">who i am</b>    <b style="font-size: 25px;">---</b></h6>
+  </div>
+  <div style="margin-top: 20px;" class="photo-all">
+<div class="photo">
+  <img style="border-radius: 25px;" class="img-fluid-0" src="photo/profile-1.jpeg" alt="">
+</div>
+
+<div class="about-1"> 
+<h3 style="font-weight: bolder; margin-top: 0px; color: rgb(201, 37, 114);">I am a freelancer <b style="color: rgb(175, 8, 8);">|</b> </h3>
+<p style="text-align: justify; font-weight: bolder;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui minima officia repudiandae deserunt sint odio ea quos recusandae soluta fuga, eveniet necessitatibus possimus a voluptates hic distinctio in, tempore deleniti placeat? Quaerat rerum amet impedit aspernatur alias incidunt asperiores distinctio quia, assumenda mollitia voluptatem fugiat pariatur dicta tempore vel tempora iusto facere? Minima non ipsam laborum tempora? Expedita ut cupiditate ipsa asperiores inventore est neque, sequi, veniam labore atque itaque quod voluptatibus eius quisquam magnam totam? Mollitia eius minus ratione consequuntur facilis laboriosam tenetur harum perspiciatis est! Laboriosam dicta, voluptas reprehenderit nemo nulla in blanditiis ipsa sequi, quae odit voluptatibus ab numquam velit sint similique a esse atque praesentium quod rem ipsam? Natus, corrupti quod. Dolores ipsa deleniti, nemo facere sapiente omnis praesentium est voluptatibus ad quidem veniam doloremque iure fugiat. Earum id maiores doloribus, soluta molestiae et magnam minima ab ipsam ducimus voluptatem, alias, itaque natus ad quaerat tempora!
+</p>
+<div style="margin-top: 15px;" class="button"><a style="text-decoration: none; color: white;" href="">Download </a></div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="social-media"> 
+  <a class="social" href="https://web.facebook.com/profile.php?id=100033078517119&_rdc=1&_rdr"><i style="color: #4267B2;" class="fab fa-2x fa-facebook-f"></i></a>
+  <a class="social" href=""><i style="color: #FF0000;" class="fab fa-2x fa-youtube"></i></a>
+  <a class="social" href=""><i style="color: #1DA1F2;" class="fab fa-2x fa-twitter"></i></a>
+  <a class="social" href=""><i style="color: #8a3ab9;" class="fab fa-2x fa-instagram"></i></a>
+</div>  
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
